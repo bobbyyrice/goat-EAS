@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goat etch a sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="controls">
+            <label for="gridSizeSlider">Grid Size: <span id="gridSizeLabel">16</span></label>
+            <input type="range" id="gridSizeSlider" class="inputThing" min="1" max="64" value="16">
+            <input type="color" id="colorPicker" value="#000000">
+            <button id="rainbowMode">Rainbow Mode</button>
+            <button id="colorMode">Color</button>
+            <button class="button">Clear Grid</button>
+        </div>
+        <div class="container">
+            <div class="divContainer"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #EDEDED;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.divContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.divClass {
+    flex: 1 0 calc(100% / var(--grid-size));
+    height: calc(500px / var(--grid-size)); 
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+button, #colorPicker {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#gridSizeSlider {
+    color: #333333;
+    width: 150px;
+}
